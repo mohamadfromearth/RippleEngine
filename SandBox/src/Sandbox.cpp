@@ -1,12 +1,10 @@
-#include <Ripple.h>
-
+#include "Ripple.h"
 
 class Sandbox : public Ripple::Application {
 
 public:
 	Sandbox()
 	{
-
 	}
 
 	~Sandbox()

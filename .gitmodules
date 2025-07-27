@@ -1,0 +1,6 @@
+[submodule "Ripple/vendor/spdlog"]
+	path = Ripple/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "RippleEngine/vendor/spdlog"]
+	path = RippleEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog

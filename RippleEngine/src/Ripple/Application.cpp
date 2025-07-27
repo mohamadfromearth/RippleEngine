@@ -1,5 +1,4 @@
 #include "Application.h"
-
 namespace Ripple {
 	
 	Application::Application() {
