@@ -17,6 +17,9 @@ project "RippleEngine"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	
+	pchheader "rppc.h"
+	pchsource "RippleEngine/src/rppc.cpp"
 
 	files
 	{
@@ -60,11 +63,7 @@ project "RippleEngine"
       buildoptions { "/utf-8" }
 
 	  
-	 postbuildcommands
-		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
-		}
-
+	
 project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"

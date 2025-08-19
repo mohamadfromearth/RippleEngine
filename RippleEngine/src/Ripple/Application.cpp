@@ -1,3 +1,4 @@
+#include "rppc.h"
 #include "Application.h"
 namespace Ripple {
 	
