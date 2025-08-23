@@ -4,3 +4,6 @@
 [submodule "RippleEngine/vendor/spdlog"]
 	path = RippleEngine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "RippleEngine/vendor/GLFW"]
+	path = RippleEngine/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

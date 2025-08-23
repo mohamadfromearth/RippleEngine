@@ -9,16 +9,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Events\ApplicationEvent.h">
+    <ClInclude Include="src\Ripple\Events\ApplicationEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Events\Event.h">
+    <ClInclude Include="src\Ripple\Events\Event.h">
       <Filter>Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Events\KeyEvent.h">
+    <ClInclude Include="src\Ripple\Events\KeyEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Events\MouseEvent.h">
+    <ClInclude Include="src\Ripple\Events\MouseEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Ripple.h" />
@@ -35,6 +35,7 @@
       <Filter>Ripple</Filter>
     </ClInclude>
     <ClInclude Include="src\rppc.h" />
+    <ClInclude Include="src\Ripple\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ripple\Application.cpp">

@@ -10,6 +10,13 @@ workspace "RippleEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "RippleEngine/vendor/GLFW/include"
+
+include "RippleEngine/vendor/GLFW"
+
+
 project "RippleEngine"
 	location "RippleEngine"
 	kind "SharedLib"
@@ -30,7 +37,16 @@ project "RippleEngine"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+
+
+links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
