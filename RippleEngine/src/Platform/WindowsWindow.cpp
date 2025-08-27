@@ -1,11 +1,11 @@
-#include "rpc.h"
+#include "rppc.h"
 #include "WindowsWindow.h"
 
 
 namespace Ripple {
 	static bool  s_GLFWInitialized = false;
 
-	Window* Create(const WindowProps& props) {
+	Window* Window::Create(const WindowProps& props) {
 		
 		return new WindowsWindow(props);
 	}

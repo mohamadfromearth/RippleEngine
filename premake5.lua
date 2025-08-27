@@ -41,18 +41,17 @@ project "RippleEngine"
 		"%{IncludeDir.GLFW}"
 	}
 
-
-
 links 
 	{ 
 		"GLFW",
-		"opengl32.lib"
+		"opengl32.lib",
+		 "legacy_stdio_definitions.lib"  
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.22621.0"
+		systemversion "latest"
 
 		defines
 		{
