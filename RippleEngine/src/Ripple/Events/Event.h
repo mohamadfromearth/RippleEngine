@@ -52,6 +52,8 @@ namespace Ripple {
 	 protected:
 		 bool m_Handled = false;
 
+		 friend class EventDispatcher;
+
 	};
 
 
