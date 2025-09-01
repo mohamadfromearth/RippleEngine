@@ -84,7 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/MDd /utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -108,7 +108,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/MD /utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -133,7 +133,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/MD /utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -155,13 +155,17 @@
     <ClInclude Include="src\Ripple\Events\Event.h" />
     <ClInclude Include="src\Ripple\Events\KeyEvent.h" />
     <ClInclude Include="src\Ripple\Events\MouseEvent.h" />
+    <ClInclude Include="src\Ripple\Layer.h" />
+    <ClInclude Include="src\Ripple\LayerStack.h" />
     <ClInclude Include="src\Ripple\Log.h" />
     <ClInclude Include="src\Ripple\Window.h" />
     <ClInclude Include="src\rppc.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Ripple\LayerStack.cpp" />
     <ClCompile Include="src\Platform\WindowsWindow.cpp" />
     <ClCompile Include="src\Ripple\Application.cpp" />
+    <ClCompile Include="src\Ripple\Layer.cpp" />
     <ClCompile Include="src\Ripple\Log.cpp" />
     <ClCompile Include="src\rppc.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

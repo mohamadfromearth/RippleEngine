@@ -63,15 +63,19 @@ links
 
 	filter "configurations:Debug"
 		defines "RP_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "RP_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "RP_DIST"
+		buildoptions "/MD"
 		optimize "On"
+		
 		
 	
 	filter "action:vs*"
@@ -116,15 +120,19 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "RP_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "RP_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "RP_DIST"
+		buildoptions "/MD"
 		optimize "On"
+		
 	
 		
 	filter "action:vs*"
