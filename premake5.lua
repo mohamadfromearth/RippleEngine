@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "RippleEngine/vendor/GLFW/include"
+IncludeDir["Glad"] = "RippleEngine/vendor/Glad/include"
 
 include "RippleEngine/vendor/GLFW"
+include "RippleEngine/vendor/Glad"
 
 
 project "RippleEngine"
@@ -38,12 +40,14 @@ project "RippleEngine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 links 
 	{ 
 		"GLFW",
+		"Glad",
 		"opengl32.lib",
 		 "legacy_stdio_definitions.lib"  
 	}

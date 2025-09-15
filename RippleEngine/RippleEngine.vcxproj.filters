@@ -61,12 +61,12 @@
     <ClCompile Include="src\Ripple\Layer.cpp">
       <Filter>Ripple</Filter>
     </ClCompile>
+    <ClCompile Include="src\Ripple\LayerStack.cpp">
+      <Filter>Ripple</Filter>
+    </ClCompile>
     <ClCompile Include="src\Ripple\Log.cpp">
       <Filter>Ripple</Filter>
     </ClCompile>
     <ClCompile Include="src\rppc.cpp" />
-    <ClCompile Include="src\Ripple\LayerStack.cpp">
-      <Filter>Ripple</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
